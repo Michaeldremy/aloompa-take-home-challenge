@@ -15,16 +15,18 @@ Under resolvers/index.ts - this file holds and runs all of the querieres and mut
 The other files in the folder are broken down files to show off the use of context.
 I tried to use the broken down files in addition with a schema file but ran into errors. 
 
-API Requirements: <br/>
-● You should be able to list all of the apps [X] <br/>
-query getAllApps { <br/>
-  apps { <br/>
-    id<br/>
-    name<br/>
-  }<br/>
-}<br/>
+API Requirements:<br/>
+● You should be able to list all of the apps [X]<br/>
+```
+query getAllApps {
+  apps {
+    id
+    name
+  }
+}
+```
 
-● You should be able to query a single app [X]
+● You should be able to query a single app [X]<br/>
 query {
   singleApp(id: "b810bf6d-d81d-4104-bc1a-3b21d5154076") {
     id
@@ -32,7 +34,7 @@ query {
   }
 }
 
-● You should be able to list all the stages [X]
+● You should be able to list all the stages [X]<br/>
 query getAllStages {
   stages {
     id
@@ -40,7 +42,7 @@ query getAllStages {
   }
 }
 
-● You should be able to query a single stage [X]
+● You should be able to query a single stage [X]<br/>
 query {
   singleStage(id: "a4087686-ee6c-49d8-a4f0-d67f5931df3a") {
     id
@@ -48,7 +50,7 @@ query {
   }
 }
 
-● You should be able to search the stages by name [X]
+● You should be able to search the stages by name [X]<br/>
 query {
   searchByStageName(name: "Tizzle Stage") {
     id
@@ -56,7 +58,7 @@ query {
   }
 }
 
-● You should be able to list all of the events [X]
+● You should be able to list all of the events [X]<br/>
 query getAllEvents {
   events {
     appId
@@ -69,7 +71,7 @@ query getAllEvents {
   }
 }
 
-● You should be able to query a single event [X]
+● You should be able to query a single event [X]<br/>
 query {
   singleEvent(id: "b4781407-da92-475e-8d87-596aee0d7f2d") {
     id
@@ -83,7 +85,7 @@ query {
   }
 }
 
-● You should be able to search the events by name [X]
+● You should be able to search the events by name [X]<br/>
 query {
   searchByEventName(name: "Kanye West") {
     id
@@ -97,7 +99,7 @@ query {
   }
 }
 
-● You should be able to query the events that occur between two dates [X]
+● You should be able to query the events that occur between two dates [X]<br/>
 query {
   allEventsBetweenDates(startsAt: "1577916000", endsAt: "1577919600") {
     name
@@ -106,7 +108,7 @@ query {
   }
 }
 
-● You should be able to list all of the events in an app [X]
+● You should be able to list all of the events in an app [X]<br/>
 query {
   allEventsInApp(id: "b810bf6d-d81d-4104-bc1a-3b21d5154076") {
     id
