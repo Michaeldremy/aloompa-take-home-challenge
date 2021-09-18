@@ -15,14 +15,14 @@ Under resolvers/index.ts - this file holds and runs all of the querieres and mut
 The other files in the folder are broken down files to show off the use of context.
 I tried to use the broken down files in addition with a schema file but ran into errors. 
 
-API Requirements: **Enter**
-● You should be able to list all of the apps [X] **Enter**
-query getAllApps {
-  apps {
-    id
-    name
-  }
-}
+API Requirements: <br/>
+● You should be able to list all of the apps [X] <br/>
+query getAllApps { <br/>
+  apps { <br/>
+    id<br/>
+    name<br/>
+  }<br/>
+}<br/>
 
 ● You should be able to query a single app [X]
 query {
