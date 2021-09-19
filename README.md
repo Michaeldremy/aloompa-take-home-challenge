@@ -2,18 +2,14 @@ Aloompa GraphQL API take home challenge
 
 First of all thank you for giving me a chance to prove my coding skills. I hope you find this readme easy to use.
 
-I have included the queries / mutations for each bullet point.
-1. Project was done in Typescript it is recommended to install ts-node to compile the project
-2. Type "yarn" or "npm install" to install all the packages
-3. Starting the project is done by doing "npm run start" or "yarn start"
-4. Follow the link it will take you to **http://localhost:4000/** and ask you to query your graphql server
-5. Have fun, plug in the queriers / mutations below
+1. Project was completed using TypeScript. It is recommended to install "ts-node" to compile the TypeScript code.
+2. Type "yarn" or "npm install" to install all the packages.
+3. To start the server type these commands "npm run start" or "yarn start".
+4. After starting the server go to **http://localhost:4000/** and it will ask you to query the graphql server.
+5. Plug in the queriers / mutations below.
 
-Queries that have parameters just replace with whatever data you need to activate the query
-
-Under resolvers/index.ts - this file holds and runs all of the querieres and mutations
-The other files in the folder are broken down files to show off the use of context.
-I tried to use the broken down files in addition with a schema file but ran into errors. 
+Under *resolvers/index.ts* - this file holds and runs all of the querieres and mutations.<br/>
+I tried to break down the *resolvers/index.ts* file into smaller resolver files and make a schema but ran into errors.<br/>
 
 API Requirements:<br/>
 ● You should be able to list all of the apps [X]<br/>
